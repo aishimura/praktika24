@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(64,61,106,1) 100%);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    text-align: center;
+    padding-right: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+main {
+    text-align: center;
+}
+
+#timer {
+    font-size: 54px;
+    margin-top: 30px;
+    color: white;
+    margin-left: 70px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.cell {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    cursor: pointer;
+    width: 140px; 
+    height: 140px; 
+}
+
+#current-player {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#current-player {
+    font-size: 45px;
+    margin-top: -400px;
+    padding-bottom: 100px;
+    color: white;
+    text-align: center;
+    margin-left: 80px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 46%;
+    margin-top: 100px;
+    border: 1px solid white;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
